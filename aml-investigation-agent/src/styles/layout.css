@@ -1,0 +1,111 @@
+/* layout.css - Styles for layout components */
+.layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-collapsed {
+    width: 70px;
+  }
+  
+  .sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .sidebar-menu {
+    margin-top: 20px;
+    list-style: none;
+  }
+  
+  .sidebar-menu-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-menu-item.active {
+    background-color: var(--secondary-color);
+  }
+  
+  .sidebar-menu-item i {
+    margin-right: 10px;
+  }
+  
+  .sidebar-menu-item span {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    transition: all 0.3s;
+  }
+  
+  .header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .header-title h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-actions .btn {
+    margin-left: 10px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .user-profile-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin-right: 10px;
+  }
